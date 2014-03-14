@@ -43,23 +43,90 @@
   }
 }
 
+$top-baseline: 200px;
+$main-block-top: ($top-baseline)+30px;
+$main-categories-top: ($main-block-top) + 110px;
+
 .main-tagline {
   position: absolute;
   background-color: $green;
-  top: 200px;
+  top: $top-baseline;
   left: 250px;
   padding: 5px 16px 0;
   margin: 0;
+  z-index: 101;
 
   > h1 {
     @include pompiere-regular;
-    font-size: 30px;
+    font-size: 32px;
     letter-spacing: 1px;
     color: $blue;
     text-transform: uppercase;
     margin: 0;
 
   }
+}
+
+.main-block-search, .main-block-categories {
+  position: absolute;
+  background-color:rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.main-block-search {
+  padding: 20px 55px;
+  top: ($top-baseline)+30px;
+  left: 173px;
+
+  > form {
+    > input {
+      width: 175px;
+      @include roboto-light;
+      font-size: 20px;
+      letter-spacing: 1px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      height: 55px;
+      color: $blue;
+      margin-right: 20px;
+      vertical-align: top;
+    }
+
+    > input[type=text] {
+      padding-left: 12px;
+    }
+  }
+}
+
+.main-block-categories {
+  top: $main-categories-top;
+  left: 173px;
+  padding: 8px 0;
+  line-height: 20px;
+  width: 657px;
+  text-align: center;
+  @include roboto-regular;
+  font-size: 13px;
+  color: $red;
+
+  > a {
+    color: $red;
+
+    &:hover {
+      color: darken($red, 5%);
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-block-button {
+  @include button;
+  font-size: 21px;
+  @include roboto-regular;
+  padding: 12px 55px;
 }
 
 .why-camperoo-elements {
@@ -117,8 +184,19 @@
 .explore-link-block-first, .explore-link-block {
   display: inline-block;
   border: 1px dashed $black;
-  height: 210px;
-  width: 203px;
+  padding: 10px;
+
+  > h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    > a {
+      @include pompiere-regular;
+      color: $red;
+      font-size: 20px;
+    }
+  }
 }
 
 .explore-link-block-first {

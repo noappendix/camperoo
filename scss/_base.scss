@@ -17,3 +17,16 @@ footer {
   height: 260px;
   background-color: $blue;
 }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $blue;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $blue;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $blue;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $blue;
+}
