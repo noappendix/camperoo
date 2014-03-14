@@ -1,0 +1,71 @@
+.contact-block {
+  background-color: $white;
+  position: relative;
+}
+
+.camperoo-concierge-headline {
+  height: 110px;
+}
+
+.camperoo-concierge {
+  border-right: 1px solid $gray;
+  margin-left: 20px;
+
+  > p {
+    @include roboto-light;
+    margin: 0 0 30px;
+    line-height: 25px;
+    font-size: 17px;
+
+    > span {
+      color: $red;
+    }
+  }
+
+  > form input, > form textarea {
+
+    @include rounded(6px);
+    background-color: $body-bg-color;
+    color: lighten($black, 30%);
+    border: 1px solid $gray;
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    $gray;
+      }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $gray;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    $gray;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    $gray;
+    }
+  }
+
+  > form input {
+    height: 55px;
+  }
+
+  > form input[type=text], > form input[type=email], {
+    padding-left: 12px;
+  }
+
+  > form textarea {
+    height: 150px;
+    overflow: auto;
+    padding: 15px 10px;
+  }
+}
+
+input#concierge-email {
+  width: 80%;
+}
+
+input#concierge-zip {
+  width: 30%;
+}
+
+textarea#concierge-message {
+  width: 100%;
+}

@@ -38,26 +38,6 @@ footer {
   background-color: #0193a9;
 }
 
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #0193a9;
-}
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #0193a9;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #0193a9;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #0193a9;
-}
-
 .nav-container {
   width: 100%;
   height: 70px;
@@ -246,6 +226,22 @@ footer {
   top: 230px;
   left: 173px;
 }
+.main-block-search > form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #0193a9;
+}
+.main-block-search > form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0193a9;
+}
+.main-block-search > form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0193a9;
+}
+.main-block-search > form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #0193a9;
+}
 .main-block-search > form > input {
   width: 175px;
   font-family: "Roboto Slab Light", sans-serif;
@@ -386,4 +382,74 @@ footer {
 
 .explore-link-block {
   margin-left: 20px;
+}
+
+.contact-block {
+  background-color: white;
+  position: relative;
+}
+
+.camperoo-concierge-headline {
+  height: 110px;
+}
+
+.camperoo-concierge {
+  border-right: 1px solid #d6d6d6;
+  margin-left: 20px;
+}
+.camperoo-concierge > p {
+  font-family: "Roboto Slab Light", sans-serif;
+  margin: 0 0 30px;
+  line-height: 25px;
+  font-size: 17px;
+}
+.camperoo-concierge > p > span {
+  color: #fd0036;
+}
+.camperoo-concierge > form input, .camperoo-concierge > form textarea {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #f2f5e1;
+  color: #4d4d4d;
+  border: 1px solid #d6d6d6;
+}
+.camperoo-concierge > form input ::-webkit-input-placeholder, .camperoo-concierge > form textarea ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #d6d6d6;
+}
+.camperoo-concierge > form input :-moz-placeholder, .camperoo-concierge > form textarea :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #d6d6d6;
+}
+.camperoo-concierge > form input ::-moz-placeholder, .camperoo-concierge > form textarea ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #d6d6d6;
+}
+.camperoo-concierge > form input :-ms-input-placeholder, .camperoo-concierge > form textarea :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #d6d6d6;
+}
+.camperoo-concierge > form input {
+  height: 55px;
+}
+.camperoo-concierge > form input[type=text], .camperoo-concierge > form input[type=email] {
+  padding-left: 12px;
+}
+.camperoo-concierge > form textarea {
+  height: 150px;
+  overflow: auto;
+  padding: 15px 10px;
+}
+
+input#concierge-email {
+  width: 80%;
+}
+
+input#concierge-zip {
+  width: 30%;
+}
+
+textarea#concierge-message {
+  width: 100%;
 }
