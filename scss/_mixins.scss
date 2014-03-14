@@ -9,3 +9,33 @@
 @mixin roboto-light {
   font-family: "Roboto Slab Light", sans-serif;
 }
+
+@mixin permanent-marker {
+  font-family: "Permanent Marker Regular", sans-serif;
+}
+
+// Delete if not used
+@mixin absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin vertical-center {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+// End delete if not used
+
+@mixin basic-horizontal-list {
+  display: inline-block;
+  list-style-type: none;
+
+  > li {
+    float: left;
+  }
+}

@@ -1,4 +1,9 @@
 .top-nav-wrapper {
+  height: $navbar-height;
+  position: relative;
+}
+
+.nav-logo {
   line-height: $navbar-height;
 }
 
@@ -8,16 +13,40 @@
   padding-left: 15px;
 }
 
+.nav-cat-drop-down, .nav-acct-drop-down, .nav-cart, .nav-search-box {
+  height: $navbar-height;
+}
+
 .nav-cat-drop-down, .nav-acct-drop-down, .nav-cart {
-  position: relative;
   display: inline-block;
   float: right;
   color: #ffffff;
   text-transform: uppercase;
-  line-height: $navbar-height;
+}
 
-  > img {
-    position: absolute;
+.nav-acct-drop-down, .nav-cart, .nav-search-box {
+  margin-left: 25px;
+}
+
+.nav-cart, .nav-acct-drop-down {
+  line-height: 16px;
+  padding-top: 15px;
+  text-align: center;
+  @include roboto-light;
+  font-size: 1.4rem;
+
+  > a {
+
+    color: #ffffff;
+    text-decoration: none;
+
+    > img {
+      margin-bottom: 2px;
+    }
+
+    > span {
+      line-height: 16px;
+    }
   }
 }
 
@@ -27,13 +56,8 @@
   letter-spacing: 0.1rem;
 }
 
-.nav-acct-drop-down, .nav-cart {
-  @include roboto-light;
-  font-size: 1.4rem;
-}
-
 .nav-cart {
-
+  width: 64px;
 }
 
 .nav-search-box {
@@ -41,3 +65,19 @@
   float: right;
   line-height: $navbar-height;
 }
+
+.nav-acct-drop-down {
+  width: 109px;
+  padding-right: 15px;
+}
+
+.nav-bar-overlay {
+  background-color: white !important;
+  border-top: 2px solid red !important;
+
+  > a {
+    color: black !important;
+  }
+}
+
+

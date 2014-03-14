@@ -1,0 +1,26 @@
+.nav-acct-drop-down-box {
+  position: absolute;
+  background-color: #ffffff;
+  border-left: 1px solid $navbar-bg-color;
+  border-bottom: 1px solid $navbar-bg-color;
+  border-right: 1px solid $navbar-bg-color;
+  width: 120px;
+  top: $navbar-height;
+  right: -12px;
+  z-index: 100;
+  display: none;
+  @include roboto-light;
+  font-size: 1.4rem;
+  color: $navbar-dropdown-text-color;
+
+  > ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 15px 0;
+
+    > li {
+      margin-bottom: 15px;
+    }
+  }
+}
