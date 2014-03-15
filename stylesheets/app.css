@@ -18,6 +18,18 @@
   margin-left: 25px;
 }
 
+.m20-left {
+  margin-left: 20px;
+}
+
+.m15-bottom {
+  margin-bottom: 15px;
+}
+
+.border-right-line {
+  border-right: 1px solid #d6d6d6;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -284,7 +296,6 @@ footer {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font: 16px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -299,18 +310,12 @@ footer {
 }
 .main-block-button:hover {
   text-decoration: none;
-  background: #fa2049;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5254c), to(#ed133c));
-  background: -moz-linear-gradient(top, #f5254c, #ed133c);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5254c', endColorstr='#ed133c');
+  background: #f0395c;
 }
 .main-block-button:active {
   position: relative;
   top: 1px;
-  color: #ff1b46;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff1b46), to(#f4728b));
-  background: -moz-linear-gradient(top, #ff1b46, #f4728b);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1b46', endColorstr='#f4728b');
+  color: #f0395c;
 }
 
 .why-camperoo-elements {
@@ -393,20 +398,23 @@ footer {
   height: 110px;
 }
 
-.camperoo-concierge {
-  border-right: 1px solid #d6d6d6;
-  margin-left: 20px;
+.camperoo-concierge-contact, .camperoo-concierge-quote {
+  height: 531px;
 }
-.camperoo-concierge > p {
+
+.camperoo-concierge-contact {
+  margin-left: 40px;
+}
+.camperoo-concierge-contact > p {
   font-family: "Roboto Slab Light", sans-serif;
   margin: 0 0 30px;
   line-height: 25px;
   font-size: 17px;
 }
-.camperoo-concierge > p > span {
+.camperoo-concierge-contact > p > span {
   color: #fd0036;
 }
-.camperoo-concierge > form input, .camperoo-concierge > form textarea {
+.camperoo-concierge-contact > form input, .camperoo-concierge-contact > form textarea {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -414,30 +422,30 @@ footer {
   color: #4d4d4d;
   border: 1px solid #d6d6d6;
 }
-.camperoo-concierge > form input ::-webkit-input-placeholder, .camperoo-concierge > form textarea ::-webkit-input-placeholder {
+.camperoo-concierge-contact > form input ::-webkit-input-placeholder, .camperoo-concierge-contact > form textarea ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #d6d6d6;
 }
-.camperoo-concierge > form input :-moz-placeholder, .camperoo-concierge > form textarea :-moz-placeholder {
+.camperoo-concierge-contact > form input :-moz-placeholder, .camperoo-concierge-contact > form textarea :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #d6d6d6;
 }
-.camperoo-concierge > form input ::-moz-placeholder, .camperoo-concierge > form textarea ::-moz-placeholder {
+.camperoo-concierge-contact > form input ::-moz-placeholder, .camperoo-concierge-contact > form textarea ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #d6d6d6;
 }
-.camperoo-concierge > form input :-ms-input-placeholder, .camperoo-concierge > form textarea :-ms-input-placeholder {
+.camperoo-concierge-contact > form input :-ms-input-placeholder, .camperoo-concierge-contact > form textarea :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #d6d6d6;
 }
-.camperoo-concierge > form input {
+.camperoo-concierge-contact > form input {
   height: 55px;
 }
-.camperoo-concierge > form input[type=text], .camperoo-concierge > form input[type=email] {
+.camperoo-concierge-contact > form input[type=text], .camperoo-concierge-contact > form input[type=email] {
   padding-left: 12px;
 }
-.camperoo-concierge > form textarea {
-  height: 150px;
+.camperoo-concierge-contact > form textarea {
+  height: 185px;
   overflow: auto;
   padding: 15px 10px;
 }
@@ -452,4 +460,48 @@ input#concierge-zip {
 
 textarea#concierge-message {
   width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px !important;
+}
+
+.camperoo-concierge-quote > img {
+  margin: 15px 0;
+}
+.camperoo-concierge-quote > q {
+  display: block;
+  font-family: "Pompiere Regular", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.camperoo-concierge-quote > p {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.contact-us-block {
+  font-family: "Roboto Slab Light", sans-serif;
+  margin-bottom: 25px;
+}
+.contact-us-block > h1 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.contact-us-block > p {
+  margin: 0 0 5px;
+  font-size: 14px;
+  color: #707070;
+}
+.contact-us-block > a {
+  color: #fd0036;
+  text-decoration: none;
+  font-size: 14px;
+}
+.contact-us-block > a:hover {
+  text-decoration: underline;
 }

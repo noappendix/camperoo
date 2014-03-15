@@ -81,7 +81,6 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font: 16px;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
   @include rounded(6px);
   color: $text_color !important;
@@ -91,14 +90,12 @@
 
   &:hover {
     text-decoration: none;
-    background: saturate($color, 10%);
-    @include gradient(saturate($color, 5%), darken($color, 5%));
+    background: lighten($color, 3%);
   }
 
   &:active {
     position: relative;
     top: 1px;
-    color: saturate($color, 15%);
-    @include gradient(saturate($color, 15%), lighten($color, 15%));
+    color: lighten($color, 3%);
   }
 }

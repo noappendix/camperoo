@@ -7,9 +7,13 @@
   height: 110px;
 }
 
-.camperoo-concierge {
-  border-right: 1px solid $gray;
-  margin-left: 20px;
+.camperoo-concierge-contact, .camperoo-concierge-quote {
+  height: 531px;
+}
+
+.camperoo-concierge-contact {
+
+  margin-left: 40px;
 
   > p {
     @include roboto-light;
@@ -52,7 +56,7 @@
   }
 
   > form textarea {
-    height: 150px;
+    height: 185px;
     overflow: auto;
     padding: 15px 10px;
   }
@@ -69,3 +73,68 @@ input#concierge-zip {
 textarea#concierge-message {
   width: 100%;
 }
+
+.form-group {
+  margin-bottom: 25px !important;
+}
+
+.camperoo-concierge-quote {
+
+  > img {
+    margin: 15px 0;
+  }
+
+  > q {
+
+    display: block;
+    @include pompiere-regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+  }
+
+  > p {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
+
+.contact-us-block {
+  @include roboto-light;
+  margin-bottom: 25px;
+
+  > h1 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  > p {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: darken($gray, 40%);
+  }
+
+  > a {
+    color: $red;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
