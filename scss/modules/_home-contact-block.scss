@@ -1,10 +1,28 @@
 .contact-block {
   background-color: $white;
   position: relative;
+  margin-bottom: 20px;
+}
+
+.camperoo-concierge-headline-container {
+  height: 110px;
+  position: relative;
+  top: 40px;
+  left: 40px
 }
 
 .camperoo-concierge-headline {
-  height: 110px;
+  position: absolute;
+  background-color: $green;
+
+  > h1 {
+    @include pompiere-regular;
+    @include uppercase;
+    font-size: 41px;
+    color: $blue;
+    margin: 0;
+    padding: 5px 5px 0;
+  }
 }
 
 .camperoo-concierge-contact, .camperoo-concierge-quote {

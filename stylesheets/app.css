@@ -38,7 +38,7 @@ html {
 body {
   font-size: 16px;
   background-color: #f2f5e1;
-  margin-bottom: 260px;
+  margin-bottom: 420px;
 }
 
 footer {
@@ -46,28 +46,59 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 260px;
+  height: 420px;
   background-color: #0193a9;
 }
 
 .nav-container {
   width: 100%;
-  height: 70px;
+  height: 130px;
   font-size: 1.5rem;
   background-color: #0193a9;
 }
 
-.hide {
-  display: none;
+.custom-hr {
+  margin: 0;
+  padding: 0;
 }
 
 .top-nav-wrapper {
-  height: 70px;
-  position: relative;
+  background-color: white;
+  height: 40px;
+  font-family: "Roboto Slab Light", sans-serif;
+  color: #0193a9;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.top-nav-right {
+  height: 40px;
+  padding-right: 15px;
+}
+.top-nav-right > ul {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.top-nav-right > ul > li {
+  float: left;
+}
+.top-nav-right > ul > li {
+  margin-left: 10px;
+}
+
+.nav-cart {
+  margin-left: 35px !important;
+}
+.nav-cart > a {
+  color: black;
+}
+.nav-cart > a > img {
+  padding-right: 3px;
 }
 
 .nav-logo {
-  line-height: 70px;
+  line-height: 90px;
 }
 
 .nav-logo {
@@ -76,91 +107,93 @@ footer {
   padding-left: 15px;
 }
 
-.nav-cat-drop-down, .nav-acct-drop-down, .nav-cart, .nav-search-box {
-  height: 70px;
-}
-
-.nav-cat-drop-down, .nav-acct-drop-down, .nav-cart {
-  display: inline-block;
+.nav-right-side {
   float: right;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.nav-acct-drop-down, .nav-cart, .nav-search-box {
-  margin-left: 25px;
-}
-
-.nav-cart, .nav-acct-drop-down {
-  line-height: 16px;
-  padding-top: 15px;
-  text-align: center;
-  font-family: "Roboto Slab Light", sans-serif;
-  font-size: 1.4rem;
-}
-.nav-cart > a, .nav-acct-drop-down > a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.nav-cart > a > img, .nav-acct-drop-down > a > img {
-  margin-bottom: 2px;
-}
-.nav-cart > a > span, .nav-acct-drop-down > a > span {
-  line-height: 16px;
-}
-
-.nav-cat-drop-down {
-  font-family: "Pompiere Regular", sans-serif;
-  font-size: 2.2rem;
-  letter-spacing: 0.1rem;
-}
-
-.nav-cart {
-  width: 64px;
-}
-
-.nav-search-box {
-  display: inline-block;
-  float: right;
-  line-height: 70px;
-}
-
-.nav-acct-drop-down {
-  width: 109px;
   padding-right: 15px;
+  height: 90px;
 }
-
-.nav-bar-overlay {
-  background-color: white !important;
-  border-top: 2px solid red !important;
-}
-.nav-bar-overlay > a {
-  color: black !important;
-}
-
-.nav-acct-drop-down-box {
-  position: absolute;
-  background-color: #ffffff;
-  border-left: 1px solid #0193a9;
-  border-bottom: 1px solid #0193a9;
-  border-right: 1px solid #0193a9;
-  width: 120px;
-  top: 70px;
-  right: -12px;
-  z-index: 100;
-  display: none;
-  font-family: "Roboto Slab Light", sans-serif;
-  font-size: 1.4rem;
-  color: #585c7b;
-}
-.nav-acct-drop-down-box > ul {
+.nav-right-side > ul {
+  display: inline-block;
   list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 15px 0;
+  font-family: "Roboto Slab Light", sans-serif;
+  color: white;
+  line-height: 90px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
-.nav-acct-drop-down-box > ul > li {
-  margin-bottom: 15px;
+.nav-right-side > ul > li {
+  float: left;
+}
+.nav-right-side > ul > li {
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+.nav-right-side > ul > li > a {
+  color: white;
+}
+.nav-right-side > ul > li > a:hover {
+  text-decoration: underline;
+}
+.nav-right-side > ul > li > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-right-side > ul > li > ul > li {
+  line-height: 20px;
+}
+.nav-right-side > ul > li > ul > li > a {
+  color: white;
+}
+
+form#search-box {
+  margin-top: 20px;
+}
+form#search-box ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #0193a9;
+}
+form#search-box :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0193a9;
+}
+form#search-box ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0193a9;
+}
+form#search-box :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #0193a9;
+}
+
+input#search-query {
+  width: 248px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  color: #0193a9;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+.custom-search-button {
+  position: absolute;
+  z-index: 101;
+  right: 0px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+
+button.custom-search-button:hover {
+  background-color: white !important;
+}
+
+.custom-glyphicon-search {
+  color: #0193a9 !important;
 }
 
 .home-main-block {
@@ -370,12 +403,18 @@ footer {
   border: 1px dashed black;
   padding: 10px;
 }
-.explore-link-block-first > h1, .explore-link-block > h1 {
+.explore-link-block-first > a, .explore-link-block > a {
+  font-family: "Pompiere Regular", sans-serif;
+  color: #fd0036;
+  font-size: 20px;
+}
+.explore-link-block-first > a > img, .explore-link-block > a > img {
+  margin-bottom: 15px;
+}
+.explore-link-block-first > a > h1, .explore-link-block > a > h1 {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-}
-.explore-link-block-first > h1 > a, .explore-link-block > h1 > a {
   font-family: "Pompiere Regular", sans-serif;
   color: #fd0036;
   font-size: 20px;
@@ -392,10 +431,27 @@ footer {
 .contact-block {
   background-color: white;
   position: relative;
+  margin-bottom: 20px;
+}
+
+.camperoo-concierge-headline-container {
+  height: 110px;
+  position: relative;
+  top: 40px;
+  left: 40px;
 }
 
 .camperoo-concierge-headline {
-  height: 110px;
+  position: absolute;
+  background-color: #c4ed3e;
+}
+.camperoo-concierge-headline > h1 {
+  font-family: "Pompiere Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 41px;
+  color: #0193a9;
+  margin: 0;
+  padding: 5px 5px 0;
 }
 
 .camperoo-concierge-contact, .camperoo-concierge-quote {
@@ -504,4 +560,114 @@ textarea#concierge-message {
 }
 .contact-us-block > a:hover {
   text-decoration: underline;
+}
+
+.press-list-container {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.press-list > ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.press-list > ul > li {
+  float: left;
+}
+.press-list > ul > li {
+  font-family: "Pompiere Regular", sans-serif;
+  color: #fd0036;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 15px;
+  padding: 0;
+}
+.press-list > ul > li.press-headline {
+  line-height: 58px;
+}
+
+.newsletter-signup {
+  color: white;
+  padding: 25px 0;
+}
+.newsletter-signup > label {
+  font-family: "Roboto Slab Light", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.newsletter-signup > input {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: #0193a9;
+  font-family: "Pompiere Regular", sans-serif;
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 20px;
+  padding: 10px 10px;
+  line-height: 25px;
+  height: 41px;
+  border: 1px solid #cccccc;
+  vertical-align: middle;
+}
+
+form.newsletter-signup ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #0193a9;
+}
+form.newsletter-signup :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0193a9;
+}
+form.newsletter-signup ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0193a9;
+}
+form.newsletter-signup :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #0193a9;
+}
+
+.newsletter-submit-button {
+  background-color: #0193a9;
+  font-family: "Pompiere Regular", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0 4px;
+}
+.newsletter-submit-button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-links > ul {
+  display: inline-block;
+  list-style-type: none;
+  font-family: "Roboto Slab Regular", sans-serif;
+  color: white;
+}
+.footer-links > ul > li {
+  float: left;
+}
+.footer-links > ul > li {
+  margin: 0 30px;
+}
+.footer-links > ul > li > h1 {
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.footer-links > ul > li > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-links > ul > li > ul > li {
+  text-align: left;
+  font-size: 14px;
+  font-family: "Roboto Slab Light", sans-serif;
+}
+.footer-links > ul > li > ul > li > a {
+  color: white;
 }

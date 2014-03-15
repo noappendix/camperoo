@@ -1,0 +1,27 @@
+.press-list-container {
+  background-color: $white;
+  padding: 20px 0;
+}
+
+.press-list {
+
+  > ul {
+    @include basic-horizontal-list;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      @include pompiere-regular;
+      color: $red;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0 15px;
+      padding: 0;
+    }
+
+    > li.press-headline {
+      line-height: 58px;
+    }
+  }
+}
+

@@ -14,6 +14,10 @@
   font-family: "Permanent Marker Regular", sans-serif;
 }
 
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
 // Delete if not used
 @mixin absolute-center {
   margin: auto;

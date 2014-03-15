@@ -1,0 +1,53 @@
+.newsletter-signup {
+
+  color: $white;
+  padding: 25px 0;
+
+  > label {
+    @include roboto-light;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  > input {
+    @include rounded(6px);
+    color: $blue;
+    @include pompiere-regular;
+    @include uppercase;
+    margin-left: 15px;
+    font-size: 20px;
+    padding: 10px 10px;
+    line-height: 25px;
+    height: 41px;
+    border: 1px solid #cccccc;
+    vertical-align: middle;
+  }
+}
+
+form.newsletter-signup {
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $blue;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $blue;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $blue;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $blue;
+  }
+}
+
+.newsletter-submit-button {
+  background-color: $blue;
+  @include pompiere-regular;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0 4px;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}

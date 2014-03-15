@@ -9,7 +9,9 @@ $search-box-red: #ef2b50;
 $gray: #d6d6d6;
 
 $navbar-bg-color: #0193a9;
-$navbar-height: 70px;
+$navbar-top-height: 40px;
+$navbar-bottom-height: 90px;
+$navbar-total-height: $navbar-top-height + $navbar-bottom-height;
 $navbar-dropdown-text-color: #585c7b;
 
 $blue: $navbar-bg-color;

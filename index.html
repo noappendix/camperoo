@@ -11,40 +11,58 @@
 </head>
 <body>
   <header class="nav-container">
+    <div class="top-nav-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 pull-left">
+            <a href="">Are you a camp owner?</a>
+          </div>
+          <div class="pull-right top-nav-right">
+            <ul>
+              <li><a href="">Help</a></li>
+              <li><a href="">$0 Credit</a></li>
+              <li class="nav-cart"><a href=""><img src="img/icons/cart.jpg" alt="cart">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
-        <nav class="top-nav-wrapper">
+        <nav class="bottom-nav-wrapper">
           <div class="nav-logo">
             <img src="img/logo/camperoo-logo-white.png" alt="Camperoo">
           </div>
-          <div class="nav-acct-drop-down">
-            <a href="" class="nav-acct-drop-down-link">
-              <img src="img/icons/account.png" alt="account">
-              <br>
-              My Account
-            </a>
-            <div class="nav-acct-drop-down-box">
-              <ul>
-                <li><a href="">Profile</a></li>
-                <li><a href="">Schedule</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="nav-cart">
-            <a href="/cart">
-              <img src="img/icons/cart.png" alt="cart">
-              <br>
-              My Cart
-            </a>
-          </div>
-          <div class="nav-search-box">
-            Search Box
-          </div>
-          <div class="nav-cat-drop-down">
-            Shop By
+          <div class="nav-right-side">
+            <ul>
+              <li>
+                <ul>
+                  <li>
+                    <form method="get" id="search-box" name="search-box">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="SEARCH" id="search-query" name="search-query" value="">
+
+                        <button type="submit" class="btn btn-default custom-search-button">
+                          <span class="glyphicon glyphicon-search custom-glyphicon-search"></span>
+                        </button>
+
+                      </div>
+                    </form>
+                  </li>
+                  <li>
+                    <a href="">or let us do it for you, for free</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">location: 77072</a>
+                <span>|</span>
+                <a href="">age 8-10</a>
+              </li>
+              <li>
+                <a href="">hi emmie!</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -114,36 +132,48 @@
         </div>
         <div class="explore-link-blocks-container">
           <div class="explore-link-block-first">
-            <img src="http://placehold.it/180x180" alt="">
-            <h1>
-              <a href="">shop</a>
-            </h1>
+            <a href="">
+              <img src="http://placehold.it/180x180" alt="">
+              <h1>
+                shop
+              </h1>
+            </a>
           </div>
           <div class="explore-link-block">
-            <img src="http://placehold.it/180x180" alt="">
-            <h1>
-              <a href="">write a review</a>
-            </h1>
+            <a href="">
+              <img src="http://placehold.it/180x180" alt="">
+              <h1>
+                write a review
+              </h1>
+            </a>
           </div>
           <div class="explore-link-block">
-            <img src="http://placehold.it/180x180" alt="">
-            <h1>
-              <a href="">schedule your summer</a>
-            </h1>
+            <a href="">
+              <img src="http://placehold.it/180x180" alt="">
+              <h1>
+                schedule your summer
+              </h1>
+            </a>
           </div>
           <div class="explore-link-block">
+            <a href="">
             <img src="http://placehold.it/180x180" alt="">
             <h1>
-              <a href="">placeholder</a>
+              placeholder
             </h1>
+            </a>
           </div>
         </div>
       </div>
       <div class="col-sm-12">
         <div class="contact-block">
           <div class="row">
-            <div class="col-sm-12 camperoo-concierge-headline">
-              Camperoo Concierge
+            <div class="col-sm-12 camperoo-concierge-headline-container">
+              <div class="camperoo-concierge-headline">
+                <h1>
+                  Camperoo Concierge
+                </h1>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -217,10 +247,74 @@
   </div>
 
   <footer>
+    <div class="press-list-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center press-list">
+            <ul>
+              <li class="press-headline">as seen on</li>
+              <li><a href=""><img src="img/home/techcrunch.jpg" alt="techcrunch"></a></li>
+              <li><a href=""><img src="img/home/forbes.jpg" alt="forbes"></a></li>
+              <li><a href=""><img src="img/home/houston-chron.jpg" alt="houston-chron"></a></li>
+              <li><a href=""><img src="img/home/xconomy.jpg" alt="xconomy"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          Footer
+          <form class="form-inline newsletter-signup">
+            <label for="email-newsletter">sign up for our newsletter</label>
+            <input type="email" class="" id="email-newsletter" placeholder="Email">
+            <!-- <a href="#" onclick="document.formName.submit();">submit</a> -->
+            <button type="submit" class="btn newsletter-submit-button">SUBMIT</button>
+          </form>
+          <hr class="custom-hr">
+          <div class="footer-links text-center">
+            <ul>
+              <li>
+                <h1>Company</h1>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Privacy</a></li>
+                  <li><a href="">Terms</a></li>
+                  <li><a href="">Press</a></li>
+                </ul>
+              </li>
+              <li>
+                <h1>For Parents</h1>
+                <ul>
+                  <li><a href="">Camperoo Concierge</a></li>
+                  <li><a href="">How It Works</a></li>
+                  <li><a href="">Write A Review</a></li>
+                  <li><a href="">My Scheduler</a></li>
+                  <li><a href="">Fundraise</a></li>
+                </ul>
+              </li>
+              <li>
+                <h1>Camp and Activity Providers</h1>
+                <ul>
+                  <li><a href="">Online Registration</a></li>
+                  <li><a href="">How It Works</a></li>
+                  <li><a href="">Support</a></li>
+                </ul>
+              </li>
+              <li>
+                <h1>Stay In Touch</h1>
+                <ul>
+                  <li><a href="">Twitter</a></li>
+                  <li><a href="">Facebook</a></li>
+                  <li><a href="">Google+</a></li>
+                  <li><a href="">Email</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
