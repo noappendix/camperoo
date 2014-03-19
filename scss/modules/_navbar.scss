@@ -34,11 +34,6 @@
   }
 }
 
-.bottom-nav-wrapper {
-  // height: $navbar-bottom-height;
-  // position: relative;
-}
-
 .nav-logo {
   line-height: $navbar-bottom-height;
 }
@@ -92,10 +87,6 @@
   }
 }
 
-// .non-search-nav {
-//   margin-top: 38px;
-// }
-
 form#search-box {
   margin-top: 20px;
 
@@ -115,11 +106,11 @@ form#search-box {
 
 input#search-query {
   width: 248px;
+  height: 34px;
   @include rounded(6px);
   border: 1px solid #cccccc;
   color: $blue;
   @include uppercase;
-  padding: 10px 10px;
 }
 
 .custom-search-button {
